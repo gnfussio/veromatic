@@ -1,0 +1,389 @@
+@import 'susy';
+@import 'breakpoint';
+
+/* ***************************  MEDIA QUERYS  ********************************/
+
+@include susy-breakpoint(max-width 1200px){
+	#block-block-1{
+		width: 40%!important;
+	}
+	.wrapredesTop{
+		min-width: inherit!important;
+	}
+}
+
+@include susy-breakpoint(max-width 992px){
+	/* MENU SESION */
+	#block-menu-menu-inicio-sesion{
+		float: left!important;
+	}
+
+	#mntoggle{
+		display: none!important;
+	}
+	.view-uc-catalog, .view-uc-catalog-terms, .view-destacados, .view-productos-relacionados{
+		.view-content{
+			.views-row{
+				width: 40%!important;
+			}
+		}
+	}
+
+	/* LOGO */
+	#block-block-1{
+		#logovero{
+			text-align: center;
+			img{
+				display: inline-block!important;
+				max-width: 120px!important;
+				padding: 25px 0!important;
+			}
+		}
+		// redes sociales
+		.wrapredesTop{
+			img{
+				&:hover{
+					opacity: 0.6;
+				}
+			}
+		}
+	}
+	// carrito de compras
+	#block-uc-cart-cart{
+		.content{
+			.cart-block-summary{
+				table{
+					tr{
+						td{
+							ul.links{
+								@include display-flex(flex);
+								li{
+									a{
+
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/* MENU */
+	#block-system-main-menu{
+	width: 100%!important;
+	ul.menu{
+		text-align: center!important;
+		}
+	}
+	/* CARRITO */
+	#block-uc-cart-cart{
+		width: 100%!important;
+		height: 60px;
+	    padding: 10px 0!important;
+		.content{
+			float: inherit!important;
+		}
+	}
+	/* BUSCADOR */
+	#block-search-form{
+		width: 80%!important;
+		padding-bottom: 20px!important;
+		display: block!important;
+		margin: 0 auto;
+	}
+
+	.page-user, .page-cart, .page-printmail-cart-checkout, page-printmail, .page-admin-store, 
+	.page-printmail-admin, .page-printmail-admin-store, .page-printmail-admin-store-orders{
+		#block-system-main{
+			> .content{
+				width: 100%!important;
+			}
+		}
+	}
+	// ICONOS EN FRONT PAGE
+	.wrapperIconsFrontPage{
+		.iconsServicios{
+
+		}
+	}
+	#vscc_controls_carrusel-block {
+		height: 20%!important;
+	}
+}
+
+@include susy-breakpoint(max-width 800px){
+	// ICONOS EN FRONT PAGE
+	.wrapperIconsFrontPage{
+		.iconsServicios{
+			width: 260px!important;
+			display: block!important;
+			margin: 0 auto!important;
+			padding: 20px 0;
+			.iconsIconFP{
+				float:left;
+				width: 50px!important;
+				margin-right: 15px;
+			}
+			.iconsTxt{
+				text-align: left!important;
+			}
+		}
+	}
+} 
+
+
+@include susy-breakpoint(max-width 768px){
+	// Quienes somos
+	.wrapColmnasQuienesSomos, .quienes-somostxt{
+		.columnas{
+			width: 100%!important;
+		}
+	}
+	.block section {
+	    height:300px!important;
+	}
+	#block-block-18 button {
+	    width: 49%!important;
+	    img{
+	    	width: 100%!important;
+	    	height: auto!important;
+	    }
+	}
+	/* LOGO */
+	.region-navigation{
+		@include flex-wrap(wrap!important);
+	}
+	#block-block-1{
+		width: 100%!important;
+		#logovero{
+			text-align: center!important;
+			width: 100%!important;
+			min-width: 150px!important;
+			display: block!important;
+			img{
+				display: inline-block!important;
+				max-width: 120px!important;
+				padding: 25px 0!important;
+				margin: 0 auto!important;
+			}
+		}
+		.wrapredesTop{
+			display: block!important;
+			width: 100%!important;
+			min-width: 90px!important;
+			padding-bottom: 25px;
+			text-align: center!important;
+			a{
+				display: inline-block!important;
+			}
+		}
+	}
+	#block-search-form{
+		width: 100%!important;
+	}
+	// carrito de compras
+	#block-uc-cart-cart{
+		width: 80%!important;
+	}
+	#block-block-15{
+		display: inherit!important;
+	}
+	#block-system-main-menu{
+		display: none!important;
+	}
+				/* MENU */
+	#block-system-main-menu{
+		display: none!important;
+	}
+	.carousel-caption{
+		display: none!important;
+	}
+	/*   menu footer  */
+	#block-block-7{
+		.content{
+			p{
+				text-align: center!important;
+				margin-top: 20px;
+				br{
+					display: none;
+				}
+				a{
+					display: block;
+					padding-top: 14px;
+					border-top: dotted 1px $blanco;
+				}
+			}
+		}
+	}
+	#vscc_controls_carrusel-block {
+		display:none!important;
+	}
+	.views-field-name{
+		width: 79%!important;
+    	left: 10%!important;
+		a{
+			font-size: 8px!important;
+		}
+	}
+	.view-id-uc_catalog_terms{
+		.views-field-name{
+			a{
+				font-size: 12px!important;
+			}
+		}
+	}
+	#block-block-10, #block-block-11{
+		display: none!important;
+	}
+	#block-block-20, #block-block-21{
+		display: block!important;
+		.content{
+			img{
+				@include wyh;
+				max-width: 480px;
+			}
+		}
+	}
+	#block-block-18{
+		.container{
+			.wrapperProyectos{
+				div{
+					width: 42%!important;
+					max-height: 260px!important;
+					overflow: hidden!important;
+					padding: 0!important;
+					margin: 12px!important;
+					img{
+						width: 100%!important;
+						height: auto!important;
+					}
+				}
+			}
+		}
+	}
+	#sidebar-second{
+		#block-webform-client-block-19{
+			margin-top: 50px!important;
+		}
+	}
+}
+
+@include susy-breakpoint(max-width 480px){
+	.views_slideshow_cycle_main {
+		.field-content{
+			figure.slideGrande{
+				display:none!important;
+			}
+			figure.slidePeque{
+				display:block!important;
+			}
+		}
+	}
+
+	.view-uc-catalog, .view-uc-catalog-terms, .view-destacados, .view-productos-relacionados{
+		.view-content{
+			.views-row{
+				width: 48%!important;
+			}
+		}
+	}
+	input[type="submit"], input[type="reset"], input[type="button"] {
+	     padding: 10px 7px!important;
+	}
+	.view-uc-catalog, .view-destacados, .view-productos-relacionados{
+		padding-bottom: 30px;
+		.views-field-uc-product-image{
+			.field-content{
+				a{
+					height: 150px!important;
+					display: block;
+				}
+			}
+		}
+	}
+	#block-block-18{
+		.container{
+			.wrapperProyectos{
+				div{
+					max-height: 108px!important;
+					img{
+						height: 100%!important;
+					}
+				}
+			}
+		}
+	}
+
+	// User
+
+	.page-user, .page-cart, .page-printmail-cart-checkout, page-printmail, .page-admin-store, 
+	.page-printmail-admin, .page-printmail-admin-store, .page-printmail-admin-store-orders{
+		#block-system-main{
+			> .content{
+				width: 100%!important;
+			}
+		}
+		.tabs{
+			ul{
+				li{
+					a{
+					    display: block!important;
+    					margin: 3px!important;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+@include susy-breakpoint(max-width 1800px){
+	#block-views-carrusel-block{
+		height:560px;
+	}
+}
+@include susy-breakpoint(max-width 1600px){
+	#block-views-carrusel-block{
+		height:500px!important;
+	}
+}
+@include susy-breakpoint(max-width 1400px){
+	#block-views-carrusel-block{
+		height:450px!important;
+	}
+}
+@include susy-breakpoint(max-width 1200px){
+	#block-views-carrusel-block{
+		height:400px!important;
+	}
+}
+@include susy-breakpoint(max-width 1000px){
+	#block-views-carrusel-block{
+		height:300px!important;
+	}
+}
+@include susy-breakpoint(max-width 750px){
+	#block-views-carrusel-block{
+		height:220px!important;
+	}
+}
+@include susy-breakpoint(max-width 500px){
+	#block-views-carrusel-block{
+		height:170px!important;
+	}
+	section.calltoaction {
+		margin-top: 60px!Important;
+	}
+}
+@include susy-breakpoint(max-width 400px){
+	#block-views-carrusel-block{
+		height:100px!important;
+	}
+}
+@include susy-breakpoint(max-width 300px){
+	#block-views-carrusel-block{
+		height:85px!important;
+	}
+}

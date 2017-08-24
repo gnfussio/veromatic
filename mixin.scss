@@ -1,0 +1,96 @@
+@import "compass/css3";
+
+//variables
+$negro: #000000;
+$blanco: #FFFFFF;
+$rojo: #e12625;
+$rojopal: #f96868;
+$celeste: #162C7E;
+$gris: #999;
+$grisoscuro: #2a2e30;
+$grisoscurotxt: #5b5757;
+$grisclaro: #bdbcbf;
+
+$greenpastel: #E3EDDA;
+$beige: #E8D8C3;
+$skin: #EBB198;
+$skindark: #D48079;
+$blackcherry: #783D49;
+$white: #FFFFFF;
+$black: #000000;
+$grey: #333;
+
+$tipo: 'Montserrat', sans-serif;
+
+
+@mixin transicion{
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+
+@mixin sombra{
+	box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.5);
+}
+
+// requiere compass/css3
+@mixin flexo{
+	@include display-flex(flex);
+	@include align-items(flex-end);
+	@include justify-content(center);
+}
+
+@mixin flexo2{
+	@include display-flex(flex);
+	@include align-items(start);
+	@include justify-content(center);
+}
+
+@mixin flexo3{
+	@include display-flex(flex);
+	@include align-items(center);
+	@include justify-content(center);
+}
+
+@mixin wyh {
+	width: 100%;
+	height: auto;
+}
+
+@mixin botonCTA {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 24px;
+    border: 3px solid #6f84bf;
+    border-radius: 9px;
+    background: #7186c2;
+    background: -webkit-gradient(linear, left top, left bottom, from(#7186c2), to(#32498a));
+    background: -moz-linear-gradient(top, #7186c2, #32498a);
+    background: linear-gradient(to bottom, #7186c2, #32498a);
+    text-shadow: #18435a 1px 1px 1px;
+    font: normal normal bold 20px arial;
+    color: #ffffff;
+    text-decoration: none;
+    &:hover, &:focus{
+	    border: 3px solid #90acf8;
+	    background: #88a1e9;
+	    background: -webkit-gradient(linear, left top, left bottom, from(#88a1e9), to(#3c58a6));
+	    background: -moz-linear-gradient(top, #88a1e9, #3c58a6);
+	    background: linear-gradient(to bottom, #88a1e9, #3c58a6);
+	    color: #ffffff;
+	    text-decoration: none;
+    }
+    &:active{
+	    background: #445074;
+	    background: -webkit-gradient(linear, left top, left bottom, from(#445074), to(#32498a));
+	    background: -moz-linear-gradient(top, #445074, #32498a);
+	    background: linear-gradient(to bottom, #445074, #32498a);	
+    }
+}
+
+
